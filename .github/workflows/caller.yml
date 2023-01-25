@@ -1,0 +1,6 @@
+name: caller
+on:
+  workflow_dispatch:
+jobs:
+  build:
+   uses: .github wechuli/environment
