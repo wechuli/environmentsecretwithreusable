@@ -3,4 +3,5 @@ on:
   workflow_dispatch:
 jobs:
   build:
-   uses: .github wechuli/environment
+   uses: ./.github/workflows/reusable.yml
+   secrets: inherit
