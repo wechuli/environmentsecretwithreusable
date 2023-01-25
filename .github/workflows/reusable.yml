@@ -1,0 +1,12 @@
+name: reusable
+on:
+  workflow_call:
+
+jobs:
+  reusablejob:
+	  environment: dev
+		runs-on: ubuntu-latest
+		env:
+		  PASSWORD: ${{ secrets.PASSWORD }}
+		steps:
+		  - echo "$PASSWORD"
